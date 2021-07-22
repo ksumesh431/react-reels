@@ -17,6 +17,7 @@ export const auth = firebase.auth();
 const firestore = firebase.firestore(); // we dont export the whole firestore so that users cant use the functions of firestore
 export const database = {
     users: firestore.collection("users"),
+    posts:firestore.collection("posts"),
     getCurrentTimeStamp: firebase.firestore.FieldValue.serverTimestamp
 }
 

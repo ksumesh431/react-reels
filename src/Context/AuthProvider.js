@@ -11,6 +11,16 @@ function AuthProvider({ children }) {
 
     //auth functions to be passed as context values
     const signup = (email, password) => auth.createUserWithEmailAndPassword(email, password);
+    const deleteUser = async () => {
+        try {
+            const user = auth.currentUser;
+            await user.delete();
+        }
+        catch (e) {
+            console.log(e)
+        }
+
+    }
     const login = (email, password) => auth.signInWithEmailAndPassword(email, password);
     const logout = () => auth.signOut();
 
@@ -29,7 +39,8 @@ function AuthProvider({ children }) {
         currentUser,
         login,
         signup,
-        logout
+        logout,
+        deleteUser
     }
 
     //if not loading and children exist..then render CHILDREN
