@@ -48,7 +48,7 @@ jobs:
           name: build
           path: build
       - name: Deploy To Firebase
-        uses: w9jds/firebase-actions@main
+        uses: w9jds/firebase-actions@master
         with:
           args: deploy --only hosting
         env: 
