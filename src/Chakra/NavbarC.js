@@ -25,7 +25,7 @@ import {
 
 
 export default function NavbarC(props) {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  
 
   const signOutFn = () => {
     
