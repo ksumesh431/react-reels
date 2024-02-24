@@ -4,7 +4,7 @@ import "firebase/storage"
 import "firebase/firestore"
 
 firebase.initializeApp({
-    apiKey: "AIzaSyDuPycF05xwtmZ0qwDWHQISnM5gb88XIeY",
+    apiKey: "",
     authDomain: "reels-48bb3.firebaseapp.com",
     projectId: "reels-48bb3",
     storageBucket: "reels-48bb3.appspot.com",
